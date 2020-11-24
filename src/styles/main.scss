@@ -7,3 +7,9 @@ html {
   font-weight: 500;
   font-size: 30px;
 }
+
+@for $i from 1 through 31 {
+  .calendar div:nth-child(#{$i})::before {
+    content: "#{$i}";
+  }
+}
